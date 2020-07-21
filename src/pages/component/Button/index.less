@@ -1,0 +1,67 @@
+@keyframes borderDis {
+  0% {
+    border-color: #0081ff;
+    color: #0081ff;
+  }
+
+  25% {
+    border-color: #ffffff;
+    color: #ffffff;
+  }
+
+  50% {
+    border-color: #ededed;
+    color: #ededed;
+  }
+
+  75% {
+    border-color: green;
+    color: green;
+  }
+
+  100% {
+    border-color: #0081ff;
+  }
+}
+.btn {
+  width: 80px;
+  min-height: 25px;
+  border: 1px solid #ededed;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 4px;
+  user-select: none;
+  &-primary {
+    background-color: #0081ff;
+    color: #fff;
+    transition: all ease-in-out 800ms;
+    &:hover {
+      opacity: .7;
+    }
+  }
+  &-success {
+    background-color: green;
+    color: #fff;
+    transition: all ease-in-out 1s;
+    &:hover {
+      opacity: .7;
+    }
+  }
+
+  &:active {
+    animation-name: borderDis;
+    animation-duration: 3s;
+    animation-play-state: initial;
+    animation-timing-function: ease-in-out;
+  }
+
+  &:focus {
+    animation-name: borderDis;
+    animation-duration: 3s;
+    animation-play-state: initial;
+    animation-timing-function: ease-in-out;
+  }
+}
