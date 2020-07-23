@@ -27,8 +27,6 @@ const numHandler: ITF<any, string> = (target: any, limits: number = 4) => {
     return _format.join(' ');
 }
 
-
-
 export {
     numHandler
 }

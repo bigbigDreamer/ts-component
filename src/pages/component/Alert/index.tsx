@@ -1,21 +1,23 @@
-import React, {FC, ReactNode, StrictMode} from 'react';
+import React, {FC, FunctionComponent, ReactNode, StrictMode} from 'react';
 
 
 interface IAlertProps {
     children?: ReactNode | string,
-
-}
-
-interface IAlert extends FC<IAlertProps>{
+    className?: string,
     type?: string
 }
 
-const Alert: IAlert = () => {
+interface IAlert<T> extends FunctionComponent<T>{
+}
+
+const Alert: IAlert<IAlertProps> = ({ children, type, className }) => {
     return (
         <StrictMode>
             <div className="alert">
-
+                { children}
             </div>
         </StrictMode>
     )
 }
+
+export default Alert;

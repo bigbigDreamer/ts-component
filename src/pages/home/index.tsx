@@ -1,6 +1,7 @@
 import React, { ReactElement, StrictMode, useState } from 'react';
 import Button  from "../component/Button";
 import { numHandler } from '../utils';
+import { regExpFormatStr, IFunc } from "../utils/extra";
 
 
 import './index.less';
