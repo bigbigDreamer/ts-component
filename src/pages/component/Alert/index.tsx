@@ -7,6 +7,7 @@ interface IAlertProps {
     type?: string
 }
 
+
 interface IAlert<T> extends FunctionComponent<T>{
 }
 
